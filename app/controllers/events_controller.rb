@@ -1,5 +1,8 @@
 class EventsController < ApplicationController
-def create
-  @event = Event.new()
-end
+  before_action :set_event, only: [ :show, :edit, :update, :destroy ]
+
+  def index
+    @events = Event.all
+    render json: @events
+  end
 end
