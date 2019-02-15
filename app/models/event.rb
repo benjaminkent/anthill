@@ -7,8 +7,7 @@
 #  description :string
 #  city        :string
 #  venue       :string
-#  date        :date
-#  time        :time
+#  date        :datetime
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #
