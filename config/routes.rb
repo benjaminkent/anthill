@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  resources :events
+  namespace :api do
+    resources :events, only: [:index, :show, :create, :destroy]
+  end
 end

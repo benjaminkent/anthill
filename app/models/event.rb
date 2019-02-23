@@ -10,6 +10,7 @@
 #  date        :datetime         not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  state       :string           not null
 #
 
 class Event < ApplicationRecord
@@ -18,4 +19,5 @@ class Event < ApplicationRecord
   validates :city, presence: true
   validates :venue, presence: true
   validates :date, presence: true
+  validates :state, presence: true
 end
